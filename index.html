@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Natural Ice Creams – Clone</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- CAUTION MODAL -->
+<div id="cautionModal" class="modal">
+  <div class="modal-box">
+    <span class="close" onclick="closeCaution()">×</span>
+    <h2>⚠ CAUTION</h2>
+    <p>This is a student clone project. Beware of fake franchise offers. Always verify from official website.</p>
+  </div>
+</div>
+
+<!-- DISCLAIMER BAR -->
+<div class="disclaimer">
+  *This is only a brand name and does not represent its true nature.
+</div>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="logo-area">
+    <img src="img1.png" alt="Naturals Logo" />
+    <img src="img2.png" alt="40 Years" />
+  </div>
+  <div class="header-right">
+    <div class="search-box">
+      <input type="text" placeholder="I'm looking for..." />
+      <button>🔍</button>
+    </div>
+    <button class="order-btn" onclick="scrollToFooter()">Order Now</button>
+    <button class="toggle" onclick="toggleTheme()">🌙</button>
+  </div>
+</header>
+
+<!-- NAVIGATION -->
+<nav class="navigation">
+  <ul class="nav-menu">
+    <li><a href="#treat">Tree To Treat</a></li>
+    <li><a href="#legacy">Our Legacy</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#magic">Malai Magic</a></li>
+    <li><a href="#franchise">Franchise Queries</a></li>
+    <li><a href="#store">Store Locator</a></li>
+  </ul>
+</nav>
+
+<!-- HERO SLIDER -->
+<section class="slider">
+  <img src="img3.png" class="slide active" />
+  <img src="img4.png" class="slide" />
+</section>
+
+<!-- STATIC BANNER -->
+<section class="banner">
+  <img src="img5.png" />
+</section>
+
+<!-- VIDEO WITH CONTROLS -->
+<section class="video-wrapper">
+  <video id="mainVideo" autoplay muted loop>
+    <source src="video1.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <div class="video-controls">
+    <button id="videoToggle" onclick="toggleVideo()">🔇 Unmute</button>
+  </div>
+</section>
+
+<!-- STORY GRID -->
+<section class="story-grid">
+  <img src="img6.png" />
+  <img src="img7.png" />
+  <img src="img8.png" />
+  <img src="img9.png" />
+</section>
+
+<!-- SEASONAL BEST -->
+<section class="seasonal" id="products">
+  <h2>SEASONAL BEST</h2>
+  <div class="cards">
+    <div class="card"><img src="img10.png"><p>Mulberry</p><button onclick="buy(this)">BUY</button><button onclick="read('Mulberry ice cream made from fresh mulberries')">READ MORE</button></div>
+    <div class="card"><img src="img11.png"><p>Blueberry</p><button onclick="buy(this)">BUY</button><button onclick="read('Blueberry ice cream rich in antioxidants')">READ MORE</button></div>
+    <div class="card"><img src="img12.png"><p>Black Currant</p><button onclick="buy(this)">BUY</button><button onclick="read('Black currant flavour – tangy & fresh')">READ MORE</button></div>
+    <div class="card"><img src="img13.png"><p>Gooseberry</p><button onclick="buy(this)">BUY</button><button onclick="read('Gooseberry ice cream – vitamin rich')">READ MORE</button></div>
+    <div class="card"><img src="img14.png"><p>Raspberry</p><button onclick="buy(this)">BUY</button><button onclick="read('Raspberry creamy delight')">READ MORE</button></div>
+    <div class="card"><img src="img15.png"><p>Cranberry</p><button onclick="buy(this)">BUY</button><button onclick="read('Cranberry refreshing scoop')">READ MORE</button></div>
+  </div>
+</section>
+
+<!-- SUNDAES -->
+<section class="sundaes">
+  <img src="img16.png" />
+  <img src="img17.png" />
+  <img src="img18.png" />
+</section>
+
+<!-- STRIPS -->
+<img src="img19.png" class="strip" />
+<img src="img20.png" class="strip" />
+
+<!-- INSTAGRAM -->
+<section class="instagram">
+  <h2>FOLLOW @naturalicecream ON INSTAGRAM</h2>
+  <div class="insta-grid" id="insta">
+    <img src="img21.png"><img src="img22.png"><img src="img23.png"><img src="img24.png"><img src="img25.png">
+  </div>
+  <button onclick="loadMore()">LOAD MORE</button>
+</section>
+
+<!-- PRE FOOTER -->
+<img src="img31.png" class="strip" />
+
+<!-- FOOTER -->
+<footer id="footer">
+  <img src="img32.png" />
+  <p>© Natural Ice Creams – Student Clone</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
